@@ -66,7 +66,6 @@ void handle_inputs(){
     int player[2]={1,2};
     int pos,i,j;
     player_turn=0;
-    //main game loop
     while(true){
     (player_turn == 0) ? cout<<"\nPLAYER_1(X):-"<<endl : cout<<"\nPLAYER_2(O):-"<<endl; 
     cout<<"Enter the position[1-9]: ";
@@ -122,17 +121,17 @@ int main(){
         //function call to handle user inputs for the Tic-Tac-Toe game.
         handle_inputs();
 
-        //prompt the user to continue playing or quit
         cout<<"\nDo you want to continue[1:yes/2:no]: ";
         cin>>choice;
         if(choice==2){
             exit(0);
         }
         else if(choice==1){
+            //clearing the 2D vector so that it can be used again
             system("cls");
             
             count=0;
-            //clearing the 2D vector so that it can be used again
+            
             for (int i = 0; i < 3; ++i) {
                 for (int j = 0; j < 3; ++j) {
                     board[i][j] = " ";
@@ -141,7 +140,7 @@ int main(){
             cout<<"*****TIC-TAC-TOE*****\n"<<endl;
             display_board();
             num++; //number of games played by the user
-            continue;//continues the games
+            continue;
         }
         else{
             break;
