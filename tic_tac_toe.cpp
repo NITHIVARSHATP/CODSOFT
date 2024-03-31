@@ -70,7 +70,6 @@ void handle_inputs(){
     (player_turn == 0) ? cout<<"\nPLAYER_1(X):-"<<endl : cout<<"\nPLAYER_2(O):-"<<endl; 
     cout<<"Enter the position[1-9]: ";
     cin>>pos;
-   
     if(pos>=1 && pos<=9){
         i=(pos-1)/3;
         j=(pos-1)%3;
@@ -117,10 +116,8 @@ int main(){
             }
         cout<<"\n###**GAME "<<num<<":-**###"<<endl;
         cout<<"PLAYER_1(X) vs PLAYER_2(O)\n\n"<<endl;
-
         //function call to handle user inputs for the Tic-Tac-Toe game.
         handle_inputs();
-
         cout<<"\nDo you want to continue[1:yes/2:no]: ";
         cin>>choice;
         if(choice==2){
