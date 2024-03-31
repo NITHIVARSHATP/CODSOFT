@@ -5,10 +5,10 @@
 using namespace std;
 
 //function to detect the tie in the game
-int count=0;
+int mcount=0;
 int detect_tie(){
-    count++;
-    if(count==9){
+    mcount++;
+    if(mcount==9){
         return 1;
     }
     return 0;
@@ -130,7 +130,7 @@ int main(){
             //clearing the 2D vector so that it can be used again
             system("cls");
             
-            count=0;
+            mcount=0;
             
             for (int i = 0; i < 3; ++i) {
                 for (int j = 0; j < 3; ++j) {
