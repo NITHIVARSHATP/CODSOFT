@@ -118,7 +118,7 @@ int main(){
             }
         cout<<"\n###**GAME "<<num<<":-**###"<<endl;
         cout<<"PLAYER_1(X) vs PLAYER_2(O)\n\n"<<endl;
-        
+
         //function call to handle user inputs for the Tic-Tac-Toe game.
         handle_inputs();
 
@@ -126,7 +126,7 @@ int main(){
         cout<<"\nDo you want to continue[1:yes/2:no]: ";
         cin>>choice;
         if(choice==2){
-            exit(0); //the game came to a halt
+            exit(0);
         }
         else if(choice==1){
             system("cls");
